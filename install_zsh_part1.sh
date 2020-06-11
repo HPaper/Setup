@@ -18,6 +18,6 @@ echo "[Install oh my zsh]"
 sudo apt install git
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-echo "[Plase Reboot or signout]"
+echo "[Plase Reboot or resignin]"
 
 exit 0

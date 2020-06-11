@@ -10,6 +10,18 @@ $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_ros2_foxy.s
 ```
 
 ## ZSH
+- EASY Intasll
+
+To do all of settings at once, enter the command below
+``` bash
+$ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh_part1.sh && chmod 755 ./install_zsh_part1.sh && ./install_zsh_part1.sh
+```
+Reboot or resignin
+``` bash
+$ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh_part2.sh && chmod 755 ./install_zsh_part2.sh && ./install_zsh_part2.sh
+```
+
+To follow the above settings one by one, proceed as follows
 - Installation ZSH
 
 Install zsh and set default shell
@@ -25,6 +37,7 @@ Install git and oh-my-zsh
 $ sudo apt install git
 $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 ```
+Reboot or log in again
 
 - Plug-in
 
@@ -95,13 +108,6 @@ source ~/colcon_ws/install/local_setup.zsh
 export ROS_DOMAIN_ID=29
 ```
 
-
-- EASY Intasll
-
-To do all of the above settings at once, enter the command below
-``` bash
-$ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh.sh && chmod 755 ./install_zsh.sh && ./install_zsh.sh
-```
 
 ## Chrome
 
