@@ -37,10 +37,18 @@ sh -c "echo \"alias gp='git pull'\" >> ~/.zshrc"
 
 sh -c "echo \"alias cw='cd ~/$name_colcon_workspace'\" >> ~/.zshrc"
 sh -c "echo \"alias cs='cd ~/$name_colcon_workspace/src'\" >> ~/.zshrc"
+sh -c "echo \"alias cr='cd ~/$name_colcon_workspace && rm -rf build install log'\" >> ~/.zshrc"
 sh -c "echo \"alias cb='cd ~/$name_colcon_workspace && colcon build --symlink-install && source ~/.zshrc'\" >> ~/.zshrc"
+sh -c "echo \"alias ct='cd ~/colcon_ws && colcon test && colcon test-result --verbose'\" >> ~/.zshrc"
+sh -c "echo \"alias ci='cd ~/colcon_ws && rosdep install --from-paths src --ignore-src -r --rosdistro dashing -y'\" >> ~/.zshrc"
+
+sh -c "echo \"alias ka='killall -9'\" >> ~/.zshrc"
+sh -c "echo \"alias kg='killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient'\" >> ~/.zshrc"
 
 sh -c "echo \"source /opt/ros/$name_ros_version/setup.zsh\" >> ~/.zshrc"
 sh -c "echo \"source ~/$name_colcon_workspace/install/local_setup.zsh\" >> ~/.zshrc"
+
+sh -c "echo \"export ROS_DOMAIN_ID=29\" >> ~/.zshrc"
 
 source $HOME/.zshrc
 
