@@ -67,9 +67,34 @@ Set the plugin by writing the following in the file:
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 Restart Zsh and type following command if the configuration wizard doesn't start automatically.
+``` bash
+$ p10k configure
 ```
-p10k configure
+
+If you want to run ROS in a ZSH environment, you need to change the ROS configuration from `~/.bashrc` to `~/.zshrc`.
 ```
+alias gz='gedit ~/.zshrc'
+alias sz='source ~/.zshrc'
+
+alias gs='git status'
+alias gp='git pull'
+
+alias cw='cd ~/colcon_ws'
+alias cs='cd ~/colcon_ws/src'
+alias cr='cd ~/colcon_ws && rm -rf build install log'
+alias cb='cd ~/colcon_ws && colcon build --symlink-install && source ~/.zshrc'
+alias ct='cd ~/colcon_ws && colcon test && colcon test-result --verbose'
+alias ci='cd ~/colcon_ws && rosdep install --from-paths src --ignore-src -r --rosdistro dashing -y'
+
+alias ka='killall -9'
+alias kg='killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient'
+
+source /opt/ros/foxy/setup.zsh
+source ~/colcon_ws/install/local_setup.zsh
+
+export ROS_DOMAIN_ID=29
+```
+
 
 - EASY Intasll
 
