@@ -1,6 +1,9 @@
 # Ubuntu 20.04 Setup
 
 ## ROS2 Foxy
+
+<img src="https://t1.daumcdn.net/cfile/tistory/9997E4425EDC99272C" width="200">
+
 - Install
 ``` bash
 $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_ros2_foxy.sh && chmod 755 ./install_ros2_foxy.sh && ./install_ros2_foxy.sh
@@ -47,8 +50,9 @@ plugins=(
 
 - Theme :
     - [powerlevel10k](https://github.com/romkatv/powerlevel10k#try-it-out)
-![Powerlevel10k](
-https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png)
+
+<img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png" width="500">
+
 
 Download and install powerlevel10k theme
 ``` bash
@@ -75,6 +79,9 @@ $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh.sh && c
 ```
 
 ## Chrome
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png" width="50">
+
 ``` bash
 $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_chrome.sh && chmod 755 ./install_chrome.sh && ./install_chrome.sh
 ```
@@ -82,10 +89,16 @@ $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_chrome.sh &
 
 ## IDE
 - Qt Creater
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1024px-Qt_logo_2016.svg.png" width="50">
+
 ``` bash
 $ wget https://qtcreator-ros.datasys.swri.edu/downloads/installers/bionic/qtcreator-ros-bionic-latest-online-installer.run && chmod u+x qtcreator-ros-bionic-latest-online-installer.run && ./qtcreator-ros-bionic-latest-online-installer.run
 ```
 - Visual Studio Code
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" width="50">
+
 ``` bash
 sudo apt install -y code
 ```
