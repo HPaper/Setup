@@ -3,20 +3,12 @@
 # Copyright (c) 2020, ROBOTIS CO., LTD.
 
 echo ""
-echo "[Setup ZSH Environment]"
+echo "[Setup ZSH Environment Part2]"
 echo "[Note] OS version  >>> Ubuntu 20.04 (Focal Fossa) or Linux Mint 21.x"
 echo ""
 echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
 echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
 read
-
-echo "[Install ZSH]"
-sudo apt install zsh -y 
-chsh -s `which zsh`
-
-echo "[Install oh my zsh]"
-sudo apt install git
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 echo "[Install Useful plugin]"
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions --depth=1
@@ -27,8 +19,6 @@ echo "[Install powerlevel10k theme]"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sed -i "s/ZSH_THEME=\"/#ZSH_THEME=\"/" ~/.zshrc
 sed -i'' -r -e "/#ZSH_THEME/i\ZSH_THEME=\"powerlevel10k/powerlevel10k\"" ~/.zshrc
-
-urce $HOME/.zshrc
 
 echo "[Set the target ROS version and name of colcon workspace]"
 name_ros_version=${name_ros_version:="foxy"}
