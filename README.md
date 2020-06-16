@@ -10,18 +10,7 @@ $ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_ros2_foxy.s
 ```
 
 ## ZSH
-- EASY Intasll
 
-To do all of settings at once, enter the command below
-``` bash
-$ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh_part1.sh && chmod 755 ./install_zsh_part1.sh && ./install_zsh_part1.sh
-```
-Reboot or resignin
-``` bash
-$ wget https://raw.githubusercontent.com/HPaper/Setup/master/install_zsh_part2.sh && chmod 755 ./install_zsh_part2.sh && ./install_zsh_part2.sh
-```
-
-To follow the above settings one by one, proceed as follows
 - Installation ZSH
 
 Install zsh and set default shell
