@@ -122,3 +122,6 @@ $ wget https://qtcreator-ros.datasys.swri.edu/downloads/installers/bionic/qtcrea
 ``` bash
 sudo apt install -y code
 ```
+
+## Graphic driver
+https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-20-04-focal-fossa-linux
