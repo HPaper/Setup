@@ -16,6 +16,7 @@ chsh -s `which zsh`
 
 echo "[Install oh my zsh]"
 sudo apt install git
+sudo apt install curl
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 echo "[Plase Reboot or resignin]"
